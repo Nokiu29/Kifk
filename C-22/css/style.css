@@ -1,0 +1,98 @@
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header, footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    /* Контейнер для карточек */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .day {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .day h3 {
+      margin-top: 0;
+      font-size: 18px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .lessons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .lessons li {
+      margin: 6px 0;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 5px;
+    }
+
+    .lessons li:last-child {
+      border-bottom: none;
+    }
+
+    .empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .empty .number {
+      margin-right: 5px;
+    }
+
+    .empty .line {
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .centered {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+    }
+
+
+    .schedule-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .container {
+        padding: 20px;
+      }
+    }
