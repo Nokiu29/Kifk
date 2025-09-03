@@ -9,12 +9,20 @@
       flex-direction: column;
     }
 
+    body {
+  min-height: 100vh; /* Высота на весь экран */
+}
+
     header, footer {
       background: #2c3e50;
       color: white;
       text-align: center;
       padding: 20px;
     }
+    
+main {
+  flex: 1; /* Контент занимает всё доступное пространство */
+}
 
     footer {
       margin-top: auto;
@@ -91,8 +99,8 @@
       margin-bottom: 30px;
     }
     
-    footer{
-      margin-top: 20px;
+    footer {
+      margin-top: auto; /* Footer уходит вниз */
     }
 
     @media screen and (max-width: 1024px) {
@@ -105,4 +113,8 @@
     .day { 
       width: 100%; 
     }     
+    footer {
+      margin-top: 20px; /* Footer уходит вниз */
+    }
+
 }
